@@ -1,0 +1,521 @@
+2025-07-22T20:45:51.705+05:30  INFO 14720 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Starting McpQtyItemApplicationTests using Java 21.0.7 with PID 14720 (started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:45:51.706+05:30  INFO 14720 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:45:51.872+05:30  INFO 14720 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:45:51.938+05:30  INFO 14720 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:45:52.090+05:30  INFO 14720 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:45:52.117+05:30  INFO 14720 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:45:52.132+05:30  INFO 14720 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:45:52.269+05:30  INFO 14720 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:45:52.281+05:30  INFO 14720 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:45:52.399+05:30  INFO 14720 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37a67cf
+2025-07-22T20:45:52.400+05:30  INFO 14720 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:45:52.440+05:30  INFO 14720 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:45:52.849+05:30  INFO 14720 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:45:52.940+05:30  INFO 14720 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:45:53.150+05:30  INFO 14720 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:45:53.150+05:30  INFO 14720 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:45:53.150+05:30  INFO 14720 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:45:53.150+05:30  INFO 14720 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:45:53.151+05:30  INFO 14720 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:45:53.204+05:30  INFO 14720 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Started McpQtyItemApplicationTests in 1.633 seconds (process running for 2.007)
+2025-07-22T20:45:53.475+05:30  INFO 14720 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:45:53.476+05:30  INFO 14720 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T20:45:53.478+05:30  INFO 14720 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T20:46:28.685+05:30  INFO 14744 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 14744 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:46:28.686+05:30  INFO 14744 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:46:28.884+05:30  INFO 14744 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:46:28.943+05:30  INFO 14744 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:46:29.093+05:30  INFO 14744 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:46:29.126+05:30  INFO 14744 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:46:29.140+05:30  INFO 14744 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:46:29.296+05:30  INFO 14744 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:46:29.308+05:30  INFO 14744 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:46:29.414+05:30  INFO 14744 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@102c18e
+2025-07-22T20:46:29.415+05:30  INFO 14744 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:46:29.447+05:30  INFO 14744 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:46:29.866+05:30  INFO 14744 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:46:29.966+05:30  INFO 14744 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:46:30.168+05:30  INFO 14744 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:46:30.169+05:30  INFO 14744 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:46:30.169+05:30  INFO 14744 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:46:30.169+05:30  INFO 14744 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:46:30.170+05:30  INFO 14744 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:46:30.225+05:30  INFO 14744 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 1.778 seconds (process running for 1.944)
+2025-07-22T20:47:42.174+05:30  INFO 14744 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:47:42.179+05:30  INFO 14744 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T20:47:42.182+05:30  INFO 14744 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T20:49:32.003+05:30  INFO 14881 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 14881 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:49:32.004+05:30  INFO 14881 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:49:32.218+05:30  INFO 14881 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:49:32.278+05:30  INFO 14881 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:49:32.421+05:30  INFO 14881 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:49:32.448+05:30  INFO 14881 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:49:32.461+05:30  INFO 14881 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:49:32.596+05:30  INFO 14881 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:49:32.615+05:30  INFO 14881 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:49:32.722+05:30  INFO 14881 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a296107
+2025-07-22T20:49:32.722+05:30  INFO 14881 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:49:32.754+05:30  INFO 14881 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:49:33.166+05:30  INFO 14881 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:49:33.211+05:30  INFO 14881 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:49:33.410+05:30  INFO 14881 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:49:33.410+05:30  INFO 14881 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:49:33.411+05:30  INFO 14881 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:49:33.411+05:30  INFO 14881 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:49:33.411+05:30  INFO 14881 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:49:33.466+05:30  INFO 14881 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 1.703 seconds (process running for 1.929)
+2025-07-22T20:49:37.419+05:30  INFO 14881 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:49:37.420+05:30  INFO 14881 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T20:49:37.423+05:30  INFO 14881 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T20:49:42.470+05:30  INFO 14899 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Starting McpQtyItemApplicationTests using Java 21.0.7 with PID 14899 (started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:49:42.471+05:30  INFO 14899 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:49:42.633+05:30  INFO 14899 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:49:42.696+05:30  INFO 14899 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:49:42.837+05:30  INFO 14899 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:49:42.858+05:30  INFO 14899 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:49:42.871+05:30  INFO 14899 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:49:42.993+05:30  INFO 14899 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:49:43.003+05:30  INFO 14899 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:49:43.107+05:30  INFO 14899 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@472c9f88
+2025-07-22T20:49:43.108+05:30  INFO 14899 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:49:43.143+05:30  INFO 14899 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:49:43.535+05:30  INFO 14899 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:49:43.560+05:30  INFO 14899 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:49:43.771+05:30  INFO 14899 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:49:43.772+05:30  INFO 14899 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:49:43.772+05:30  INFO 14899 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:49:43.772+05:30  INFO 14899 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:49:43.773+05:30  INFO 14899 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:49:43.830+05:30  INFO 14899 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Started McpQtyItemApplicationTests in 1.486 seconds (process running for 1.847)
+2025-07-22T20:49:44.098+05:30  INFO 14899 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:49:44.098+05:30  INFO 14899 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T20:49:44.100+05:30  INFO 14899 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T20:55:18.779+05:30  INFO 15297 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Starting McpQtyItemApplicationTests using Java 21.0.7 with PID 15297 (started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:55:18.780+05:30  INFO 15297 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:55:18.942+05:30  INFO 15297 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:55:19.005+05:30  INFO 15297 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:55:19.148+05:30  INFO 15297 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:55:19.175+05:30  INFO 15297 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:55:19.189+05:30  INFO 15297 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:55:19.325+05:30  INFO 15297 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:55:19.338+05:30  INFO 15297 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:55:19.435+05:30  INFO 15297 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11abd6c
+2025-07-22T20:55:19.436+05:30  INFO 15297 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:55:19.530+05:30  INFO 15297 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:55:19.937+05:30  INFO 15297 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:55:20.048+05:30  INFO 15297 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:55:20.254+05:30  INFO 15297 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:55:20.255+05:30  INFO 15297 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:55:20.255+05:30  INFO 15297 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:55:20.255+05:30  INFO 15297 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:55:20.255+05:30  INFO 15297 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:55:20.311+05:30  INFO 15297 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Started McpQtyItemApplicationTests in 1.661 seconds (process running for 2.033)
+2025-07-22T20:55:20.585+05:30  INFO 15297 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:55:20.586+05:30  INFO 15297 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T20:55:20.588+05:30  INFO 15297 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T20:55:37.138+05:30  INFO 15324 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Starting McpQtyItemApplicationTests using Java 21.0.7 with PID 15324 (started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:55:37.138+05:30  INFO 15324 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:55:37.303+05:30  INFO 15324 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:55:37.366+05:30  INFO 15324 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:55:37.510+05:30  INFO 15324 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:55:37.539+05:30  INFO 15324 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:55:37.553+05:30  INFO 15324 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:55:37.694+05:30  INFO 15324 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:55:37.707+05:30  INFO 15324 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:55:37.809+05:30  INFO 15324 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@472c9f88
+2025-07-22T20:55:37.809+05:30  INFO 15324 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:55:37.852+05:30  INFO 15324 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:55:38.267+05:30  INFO 15324 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:55:38.351+05:30  INFO 15324 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:55:38.555+05:30  INFO 15324 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:55:38.555+05:30  INFO 15324 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:55:38.555+05:30  INFO 15324 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:55:38.555+05:30  INFO 15324 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:55:38.556+05:30  INFO 15324 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:55:38.609+05:30  INFO 15324 --- [mcp-qty-item] [main] c.d.m.McpQtyItemApplicationTests         : Started McpQtyItemApplicationTests in 1.608 seconds (process running for 1.989)
+2025-07-22T20:55:38.882+05:30  INFO 15324 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:55:38.883+05:30  INFO 15324 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T20:55:38.885+05:30  INFO 15324 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T20:58:17.527+05:30  INFO 15519 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 15519 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:58:17.528+05:30  INFO 15519 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:58:17.693+05:30  INFO 15519 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:58:17.745+05:30  INFO 15519 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:58:17.871+05:30  INFO 15519 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:58:17.900+05:30  INFO 15519 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:58:17.914+05:30  INFO 15519 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:58:18.051+05:30  INFO 15519 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:58:18.063+05:30  INFO 15519 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:58:18.148+05:30  INFO 15519 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@551be9f6
+2025-07-22T20:58:18.149+05:30  INFO 15519 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:58:18.178+05:30  INFO 15519 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:58:18.589+05:30  INFO 15519 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:58:18.678+05:30  INFO 15519 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:58:18.868+05:30  INFO 15519 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:58:18.868+05:30  INFO 15519 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:58:18.868+05:30  INFO 15519 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:58:18.868+05:30  INFO 15519 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:58:18.869+05:30  INFO 15519 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:58:18.919+05:30  INFO 15519 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 1.558 seconds (process running for 1.683)
+2025-07-22T20:59:32.980+05:30  INFO 15793 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 15793 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T20:59:32.981+05:30  INFO 15793 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T20:59:33.172+05:30  INFO 15793 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T20:59:33.228+05:30  INFO 15793 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-07-22T20:59:33.376+05:30  INFO 15793 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T20:59:33.403+05:30  INFO 15793 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T20:59:33.417+05:30  INFO 15793 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T20:59:33.535+05:30  INFO 15793 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T20:59:33.547+05:30  INFO 15793 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T20:59:33.631+05:30  INFO 15793 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cfed0ba
+2025-07-22T20:59:33.631+05:30  INFO 15793 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T20:59:33.664+05:30  INFO 15793 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T20:59:34.015+05:30  INFO 15793 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T20:59:34.101+05:30  INFO 15793 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T20:59:34.318+05:30  INFO 15793 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T20:59:34.318+05:30  INFO 15793 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T20:59:34.318+05:30  INFO 15793 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T20:59:34.319+05:30  INFO 15793 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T20:59:34.319+05:30  INFO 15793 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T20:59:34.394+05:30  INFO 15793 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 1.589 seconds (process running for 1.715)
+2025-07-22T21:00:40.103+05:30  INFO 15825 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 15825 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T21:00:40.104+05:30  INFO 15825 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T21:00:40.382+05:30  INFO 15825 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T21:00:40.439+05:30  INFO 15825 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2025-07-22T21:00:40.634+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T21:00:40.641+05:30  INFO 15825 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T21:00:40.642+05:30  INFO 15825 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-22T21:00:40.661+05:30  INFO 15825 --- [mcp-qty-item] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T21:00:40.661+05:30  INFO 15825 --- [mcp-qty-item] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 534 ms
+2025-07-22T21:00:40.732+05:30  INFO 15825 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T21:00:40.751+05:30  INFO 15825 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T21:00:40.763+05:30  INFO 15825 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T21:00:40.870+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T21:00:40.880+05:30  INFO 15825 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T21:00:40.955+05:30  INFO 15825 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3316527e
+2025-07-22T21:00:40.955+05:30  INFO 15825 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T21:00:40.984+05:30  INFO 15825 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T21:00:41.313+05:30  INFO 15825 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T21:00:41.395+05:30  INFO 15825 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:00:41.573+05:30  WARN 15825 --- [mcp-qty-item] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T21:00:41.697+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T21:00:41.697+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T21:00:41.697+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T21:00:41.697+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T21:00:41.698+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T21:00:41.754+05:30  INFO 15825 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T21:00:41.759+05:30  INFO 15825 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 1.89 seconds (process running for 2.053)
+2025-07-22T21:01:07.354+05:30  INFO 15825 --- [mcp-qty-item] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T21:01:07.354+05:30  INFO 15825 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T21:01:07.361+05:30  INFO 15825 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-07-22T21:03:51.184+05:30  INFO 15825 --- [mcp-qty-item] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T21:03:51.194+05:30  INFO 15825 --- [mcp-qty-item] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T21:03:51.211+05:30  INFO 15825 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:03:51.213+05:30  INFO 15825 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:03:51.229+05:30  INFO 15825 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T21:03:54.301+05:30  INFO 15935 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 15935 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T21:03:54.302+05:30  INFO 15935 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T21:03:54.618+05:30  INFO 15935 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T21:03:54.679+05:30  INFO 15935 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2025-07-22T21:03:54.905+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T21:03:54.913+05:30  INFO 15935 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T21:03:54.913+05:30  INFO 15935 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-22T21:03:54.934+05:30  INFO 15935 --- [mcp-qty-item] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T21:03:54.934+05:30  INFO 15935 --- [mcp-qty-item] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 611 ms
+2025-07-22T21:03:55.001+05:30  INFO 15935 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T21:03:55.027+05:30  INFO 15935 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T21:03:55.039+05:30  INFO 15935 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T21:03:55.160+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T21:03:55.173+05:30  INFO 15935 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T21:03:55.300+05:30  INFO 15935 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45297e7
+2025-07-22T21:03:55.301+05:30  INFO 15935 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T21:03:55.318+05:30  WARN 15935 --- [mcp-qty-item] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-22T21:03:55.326+05:30  INFO 15935 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T21:03:55.723+05:30  INFO 15935 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T21:03:55.756+05:30  INFO 15935 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:03:55.945+05:30  WARN 15935 --- [mcp-qty-item] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T21:03:56.065+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T21:03:56.066+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T21:03:56.066+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T21:03:56.066+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T21:03:56.066+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T21:03:56.134+05:30  INFO 15935 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T21:03:56.138+05:30  INFO 15935 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 2.088 seconds (process running for 2.35)
+2025-07-22T21:04:28.449+05:30  INFO 15935 --- [mcp-qty-item] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T21:04:28.450+05:30  INFO 15935 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T21:04:28.452+05:30  INFO 15935 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-22T21:04:28.582+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:04:28.582+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:04:47.888+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:04:47.888+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:04:58.051+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:04:58.051+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:05:18.809+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:05:18.811+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:07:41.144+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:07:41.146+05:30  WARN 15935 --- [mcp-qty-item] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:07:49.785+05:30  INFO 15935 --- [mcp-qty-item] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T21:07:49.794+05:30  INFO 15935 --- [mcp-qty-item] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T21:07:49.815+05:30  INFO 15935 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:07:49.817+05:30  INFO 15935 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:07:49.819+05:30  INFO 15935 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T21:09:17.031+05:30  INFO 16127 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 16127 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T21:09:17.035+05:30  INFO 16127 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T21:09:17.342+05:30  INFO 16127 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T21:09:17.402+05:30  INFO 16127 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2025-07-22T21:09:17.629+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T21:09:17.637+05:30  INFO 16127 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T21:09:17.638+05:30  INFO 16127 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-22T21:09:17.660+05:30  INFO 16127 --- [mcp-qty-item] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T21:09:17.660+05:30  INFO 16127 --- [mcp-qty-item] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2025-07-22T21:09:17.704+05:30  INFO 16127 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T21:09:17.807+05:30  INFO 16127 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43471a7e
+2025-07-22T21:09:17.807+05:30  INFO 16127 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T21:09:17.843+05:30  INFO 16127 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T21:09:17.874+05:30  INFO 16127 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T21:09:17.887+05:30  INFO 16127 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T21:09:18.000+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T21:09:18.040+05:30  INFO 16127 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T21:09:18.457+05:30  INFO 16127 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T21:09:18.557+05:30  INFO 16127 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:09:18.747+05:30  WARN 16127 --- [mcp-qty-item] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T21:09:18.885+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T21:09:18.886+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T21:09:18.886+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T21:09:18.886+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T21:09:18.886+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T21:09:18.944+05:30  INFO 16127 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T21:09:18.949+05:30  INFO 16127 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 2.148 seconds (process running for 2.416)
+2025-07-22T21:09:34.599+05:30  INFO 16127 --- [mcp-qty-item] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T21:09:34.600+05:30  INFO 16127 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T21:09:34.604+05:30  INFO 16127 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-07-22T21:09:34.745+05:30  WARN 16127 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:09:34.745+05:30  WARN 16127 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:10:43.971+05:30  INFO 16127 --- [mcp-qty-item] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T21:10:43.978+05:30  INFO 16127 --- [mcp-qty-item] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T21:10:43.995+05:30  INFO 16127 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:10:43.998+05:30  INFO 16127 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:10:43.999+05:30  INFO 16127 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T21:10:47.038+05:30  INFO 16158 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 16158 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T21:10:47.039+05:30  INFO 16158 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T21:10:47.335+05:30  INFO 16158 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T21:10:47.393+05:30  INFO 16158 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2025-07-22T21:10:47.601+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T21:10:47.608+05:30  INFO 16158 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T21:10:47.608+05:30  INFO 16158 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-22T21:10:47.628+05:30  INFO 16158 --- [mcp-qty-item] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T21:10:47.628+05:30  INFO 16158 --- [mcp-qty-item] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 569 ms
+2025-07-22T21:10:47.667+05:30  INFO 16158 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T21:10:47.766+05:30  INFO 16158 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31723307
+2025-07-22T21:10:47.767+05:30  INFO 16158 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T21:10:47.803+05:30  INFO 16158 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T21:10:47.834+05:30  INFO 16158 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T21:10:47.848+05:30  INFO 16158 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T21:10:47.966+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T21:10:48.004+05:30  INFO 16158 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T21:10:48.351+05:30  INFO 16158 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T21:10:48.452+05:30  INFO 16158 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:10:48.634+05:30  WARN 16158 --- [mcp-qty-item] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T21:10:48.761+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T21:10:48.761+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T21:10:48.761+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T21:10:48.761+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T21:10:48.761+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T21:10:48.820+05:30  INFO 16158 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T21:10:48.824+05:30  INFO 16158 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 2.034 seconds (process running for 2.24)
+2025-07-22T21:11:00.090+05:30  INFO 16158 --- [mcp-qty-item] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T21:11:00.090+05:30  INFO 16158 --- [mcp-qty-item] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T21:11:00.097+05:30  INFO 16158 --- [mcp-qty-item] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-07-22T21:11:00.251+05:30  WARN 16158 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:11:00.251+05:30  WARN 16158 --- [mcp-qty-item] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:11:00.251+05:30  WARN 16158 --- [mcp-qty-item] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:11:00.251+05:30  WARN 16158 --- [mcp-qty-item] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:11:00.251+05:30  WARN 16158 --- [mcp-qty-item] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:11:00.251+05:30  WARN 16158 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:14:12.591+05:30  INFO 16158 --- [mcp-qty-item] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T21:14:12.601+05:30  INFO 16158 --- [mcp-qty-item] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T21:14:12.617+05:30  INFO 16158 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:14:12.621+05:30  INFO 16158 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:14:12.622+05:30  INFO 16158 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T21:14:15.807+05:30  INFO 16204 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Starting McpQtyItemApplication using Java 21.0.7 with PID 16204 (/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/target/classes started by dushyant in /Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main)
+2025-07-22T21:14:15.808+05:30  INFO 16204 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-22T21:14:16.118+05:30  INFO 16204 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-22T21:14:16.177+05:30  INFO 16204 --- [mcp-qty-item] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2025-07-22T21:14:16.395+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-22T21:14:16.403+05:30  INFO 16204 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22T21:14:16.403+05:30  INFO 16204 --- [mcp-qty-item] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-22T21:14:16.425+05:30  INFO 16204 --- [mcp-qty-item] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22T21:14:16.425+05:30  INFO 16204 --- [mcp-qty-item] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2025-07-22T21:14:16.469+05:30  INFO 16204 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-22T21:14:16.573+05:30  INFO 16204 --- [mcp-qty-item] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48268eec
+2025-07-22T21:14:16.574+05:30  INFO 16204 --- [mcp-qty-item] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-22T21:14:16.611+05:30  INFO 16204 --- [mcp-qty-item] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-22T21:14:16.641+05:30  INFO 16204 --- [mcp-qty-item] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-07-22T21:14:16.660+05:30  INFO 16204 --- [mcp-qty-item] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-22T21:14:16.781+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-22T21:14:16.822+05:30  INFO 16204 --- [mcp-qty-item] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-22T21:14:17.184+05:30  INFO 16204 --- [mcp-qty-item] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-22T21:14:17.282+05:30  INFO 16204 --- [mcp-qty-item] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:14:17.472+05:30  WARN 16204 --- [mcp-qty-item] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-22T21:14:17.597+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2025-07-22T21:14:17.598+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 6
+2025-07-22T21:14:17.598+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2025-07-22T21:14:17.599+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2025-07-22T21:14:17.599+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2025-07-22T21:14:17.663+05:30  INFO 16204 --- [mcp-qty-item] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-22T21:14:17.667+05:30  INFO 16204 --- [mcp-qty-item] [main] c.ds.mcp_qty_item.McpQtyItemApplication  : Started McpQtyItemApplication in 2.112 seconds (process running for 2.335)
+2025-07-22T21:14:22.254+05:30  INFO 16204 --- [mcp-qty-item] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22T21:14:22.255+05:30  INFO 16204 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-22T21:14:22.256+05:30  INFO 16204 --- [mcp-qty-item] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-22T21:14:22.376+05:30  WARN 16204 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-07-22T21:14:22.376+05:30  WARN 16204 --- [mcp-qty-item] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-07-22T21:16:22.098+05:30  INFO 16204 --- [mcp-qty-item] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22T21:16:22.106+05:30  INFO 16204 --- [mcp-qty-item] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-22T21:16:22.118+05:30  INFO 16204 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:16:22.121+05:30  INFO 16204 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:16:22.122+05:30  INFO 16204 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T21:23:19.461+05:30 ERROR 15793 --- [mcp-qty-item] [pool-2-thread-1] i.m.s.t.StdioServerTransportProvider     : Error reading from stdin
+
+java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.readBytes(Native Method) ~[na:na]
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:287) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[na:na]
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[na:na]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188) ~[na:na]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[na:na]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[na:na]
+	at io.modelcontextprotocol.server.transport.StdioServerTransportProvider$StdioMcpSessionTransport.lambda$startInboundProcessing$4(StdioServerTransportProvider.java:209) ~[mcp-0.10.0.jar:0.10.0]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.6.jar:3.7.6]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.6.jar:3.7.6]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-22T21:23:19.502+05:30  INFO 15793 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:23:19.509+05:30  INFO 15793 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:23:19.512+05:30  INFO 15793 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-22T21:23:19.502+05:30 ERROR 15519 --- [mcp-qty-item] [pool-2-thread-1] i.m.s.t.StdioServerTransportProvider     : Error reading from stdin
+
+java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.readBytes(Native Method) ~[na:na]
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:287) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[na:na]
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[na:na]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188) ~[na:na]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[na:na]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[na:na]
+	at io.modelcontextprotocol.server.transport.StdioServerTransportProvider$StdioMcpSessionTransport.lambda$startInboundProcessing$4(StdioServerTransportProvider.java:209) ~[mcp-0.10.0.jar:0.10.0]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.6.jar:3.7.6]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.6.jar:3.7.6]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-22T21:23:19.593+05:30  INFO 15519 --- [mcp-qty-item] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T21:23:19.615+05:30  INFO 15519 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T21:23:19.618+05:30  INFO 15519 --- [mcp-qty-item] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

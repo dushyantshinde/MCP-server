@@ -1,0 +1,7 @@
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/McpQtyItemApplication.java
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/controller/QtyItemController.java
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/entity/QuantityItem.java
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/entity/QuantityItemAllocation.java
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/repo/QuantityItemAllocationRepository.java
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/repo/QuantityItemRepository.java
+/Users/dushyant/Desktop/Java-workspace/Qty-allocation-AI/spring-boot-mcp-server-example-main/src/main/java/com/ds/mcp_qty_item/service/QtyItemService.java
